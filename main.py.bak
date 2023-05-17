@@ -29,7 +29,7 @@ def draw_arc(x1, x2, y1, y2):
     elif x1 > x2 and y1 < y2: #2nd cuadrant
         end = start - np.pi # Clockwise
     elif x1 < x2 and y1 > y2: #2nd cuadrant
-        end = start - np.pi # Clockwise
+        end = start + np.pi # Clockwise
     else:
         end = start - np.pi # Counterclockwise
     print(start)
