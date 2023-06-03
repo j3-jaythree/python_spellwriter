@@ -5,7 +5,6 @@ from matplotlib.patches import RegularPolygon
 
 # Create regular polygon
 def create_polygon(sides=8, length=1):
-    #a, plot = plt.subplots(1)
     pol = RegularPolygon((0, 0), numVertices=sides, radius=length)
     verts = pol.get_path().vertices
     trans = pol.get_patch_transform()
@@ -17,10 +16,6 @@ def draw_arc(center, x1, x2, y1, y2):
     # Center between points
     cx = (x1 + x2) / 2
     cy = (y1 + y2) / 2
-    # Draw points
-    plt.plot(x1, y1, color='blue', marker='o')
-    plt.plot(x2, y2, color='blue', marker='o')
-
     # Draw center point
     plt.plot(cx, cy, color='green', marker='o')
 
