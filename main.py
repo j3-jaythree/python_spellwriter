@@ -4,7 +4,7 @@ from utils.utils import create_polygon
 from utils.utils import draw_arc
 
 if __name__ == "__main__":
-     Round to avoid errors
+    # Round to avoid errors
     points = np.round(create_polygon(sides=8, length=10), decimals=3)
     print(points)
     # Global center
@@ -36,6 +36,5 @@ if __name__ == "__main__":
     plt.gca().set_aspect('equal')
     plt.axis('off')
     plt.savefig('test.png', bbox_inches='tight', dpi=300)
-    viembre
 
     plt.show()
