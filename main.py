@@ -1,4 +1,3 @@
-from matplotlib import markers
 import numpy as np
 import matplotlib.pyplot as plt
 from utils.utils import create_polygon
@@ -19,8 +18,8 @@ if __name__ == "__main__":
     for i in range(0, len(points)-1):
         x, y = points[i]
         plt.plot(x, y, color='blue', marker='o')
-        plt.annotate(str(i), (x, y), textcoords='offset points', xytext=(0,10))
-    plt.show()
+        # plt.annotate(str(i), (x, y), textcoords='offset points', xytext=(0, 10))
+    # plt.show()
 
     # No need to order the points, they are just how I like them
 
