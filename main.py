@@ -43,7 +43,7 @@ if __name__ == "__main__":
     for char in level[::-1]:
         if int(char) == 1:
             x1, y1 = points[i]
-            x2, y2= points[i + k]
+            x2, y2 = points[i + k]
             draw_arc(center, x1, x2, y1, y2)
         i += 1
 
